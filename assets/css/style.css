@@ -1,0 +1,13 @@
+:root{
+	--dark: #16191c;
+	--dark-x: #1e2126;
+	--light: #ffffff;
+}
+body{
+	/*background-color: var(--dark);*/
+}
+
+
+.bg-dark{
+	background-color: var(--dark) !important;
+}
