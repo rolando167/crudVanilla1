@@ -11,6 +11,8 @@
 	// Method: GET
 
 	const renderData = (data) =>{
+		alert('sad');
+		
 		data.forEach((post, index) => {
 			let tableRow = document.createElement('tr');
 			tableRow.id = post.id;
