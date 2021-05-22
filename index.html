@@ -7,9 +7,12 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- =====BOX ICONS===== -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-
+	<!-- ESTILO CUSTOM -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 	<title>Crud Vanilla | Fetch 💻</title>
  </head>
  <body class="bg-dark headlineBlock">
@@ -38,7 +41,7 @@
 						  <th scope="col">Monto S/.</th>
 						  <th scope="col">Estado</th>
 						  <th scope="col">Fecha</th>
-						  <th scope="col">Opciones</th>
+						  <th scope="col" class="text-center">Opciones</th>
 
 						</tr>
 					</thead>
@@ -50,7 +53,10 @@
 						  <td>Otto</td>
 						  <td>Otto</td>
 						  <td>@mdo</td>
-						  <td>@mdo</td>
+						  <td class="text-center">
+							<button type="button" class="btn btn-success mr-1"><i class='bx bxs-edit'></i></button>
+							<button type="button" class="btn btn-danger"><i class='bx bx-stop-circle'></i></button>
+						  </td>
 						</tr>
 				  	</tbody>
 				</table>
