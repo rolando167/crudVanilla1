@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<title>Crud Vanilla | Fetch 💻</title>
  </head>
- <body class="bg-dark">
+ <body class="bg-dark headlineBlock">
 
 	<!-- https://higorr.pe/api/checkTestLista/55140268 -->
 
@@ -26,7 +26,7 @@
 		</nav>
 	</header>
 
-	<section>
+	<section class="taglineBlock">
 		<div class="container mt-5">
 			<div class="table-responsive">
 				<table class="table table-striped table-dark  table-hover">
@@ -64,8 +64,19 @@
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
- 
--->
+ 	<!--===== SCROLL REVEAL =====-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+ 	<script type="text/javascript">
+ 		const sr = ScrollReveal({
+			origin: 'top',
+			distance: '80px',
+			duration: 2000,
+			reset: false
+		});
+		sr.reveal('.headlineBlock');
+		sr.reveal('.taglineBlock', { delay: 500 });
+
+ 	</script>
 </body>
 </html>
 
