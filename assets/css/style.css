@@ -15,6 +15,11 @@
   --mb-6: 3rem;
 }
 
+ 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
 	/*background-color: var(--dark);*/
 }
