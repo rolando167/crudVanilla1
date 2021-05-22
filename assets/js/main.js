@@ -6,12 +6,10 @@
 
 	var urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
  
-	alert('cast');
 	// ===== GET DATA ===== -->
 	// Method: GET
 
 	const renderData = (data) =>{
-		alert('sad');
 
 		data.forEach((post, index) => {
 			let tableRow = document.createElement('tr');
@@ -39,11 +37,9 @@
 		});
 	}
 
-	alert('caso');
-	 
 	fetch(urlList)
 		.then(res => res.json())
-		.then(data => alert('ok') );
+		.then(data => renderData(data.data) );
  
 
 	// ===== GET DATA ===== -->
