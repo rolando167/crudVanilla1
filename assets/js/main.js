@@ -4,7 +4,7 @@
 
 	var tableData = document.getElementById('table-data').getElementsByTagName('tbody')[0];
 
-	const urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
+	var urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
  
 
 	// ===== GET DATA ===== -->
