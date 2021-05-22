@@ -39,9 +39,9 @@
  
 
 	async function fetchData() {	
-	  const response = await fetch(urlList);
+	  // const response = await fetch(urlList);
 	  // waits until the request completes...
-	  console.log(response);
+	  // console.log(response);
 
 	  fetch(urlList)
 		.then(res => res.json())
