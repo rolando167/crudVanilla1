@@ -6,7 +6,7 @@
 
 	var urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
  
-	alert('cas');
+	alert('cast');
 	// ===== GET DATA ===== -->
 	// Method: GET
 
@@ -39,7 +39,10 @@
 		});
 	}
 
- 
+	 
+	fetch(urlList)
+		.then(res => res.json())
+		.then(data => alert('ok') );
  
 
 	// ===== GET DATA ===== -->
