@@ -12,7 +12,7 @@
 
 	const renderData = (data) =>{
 		alert('sad');
-		
+
 		data.forEach((post, index) => {
 			let tableRow = document.createElement('tr');
 			tableRow.id = post.id;
@@ -42,7 +42,7 @@
 	 
 	fetch(urlList)
 		.then(res => res.json())
-		.then(data => renderData(data.data) );
+		.then(data => alert('ok') );
  
 
 	// ===== GET DATA ===== -->
