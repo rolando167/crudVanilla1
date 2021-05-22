@@ -36,11 +36,24 @@
 		});
 	}
 
-	fetch(urlList)
-		.then(res => res.json())
-		.then(data => renderData(data.data) );
  
 
+	async function fetchData() {	
+	  const response = await fetch(urlList);
+	  // waits until the request completes...
+	  console.log(response);
+
+	  fetch(urlList)
+		.then(res => res.json())
+		.then(data => renderData(data.data) )
+ 		.catch(function(error) {
+ 			alert('Hubo un problema con la petición Fetch:' + error.message);
+			console.log('Hubo un problema con la petición Fetch:' + error.message);
+		});
+	}
+
+	fetchData();
+	
 	// ===== GET DATA ===== -->
 	
 	// ===== GET DATA ===== -->
