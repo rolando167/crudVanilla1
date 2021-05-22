@@ -11,11 +11,14 @@
 
 	const renderData = (data) => {
 
-		alert('ok');
+		alert('ssss');
 	}
 
 renderData('cas');
- 
+
+	fetch(urlList)
+		.then(res => res.json())
+		.then(data => renderData(data.data) );
  
 
 	// ===== GET DATA ===== -->
