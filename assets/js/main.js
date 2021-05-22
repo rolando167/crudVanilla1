@@ -39,6 +39,7 @@
 		});
 	}
 
+	alert('caso');
 	 
 	fetch(urlList)
 		.then(res => res.json())
