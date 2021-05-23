@@ -3,9 +3,9 @@
 	var darkMode = document.getElementById('dark-change');
 	
 	darkMode.addEventListener('click', function(){
-		// darkMode.classList.toggle('active');
+		darkMode.classList.toggle('active');
 
-		 document.body.classList.toggle('bg-dark');
+		content.classList.toggle('bg-dark');
 	});
 	
 
