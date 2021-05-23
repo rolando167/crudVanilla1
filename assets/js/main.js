@@ -1,4 +1,13 @@
-
+	
+	var content = document.getElementsByTagName('body')[0];
+	var darkMode = document.getElementById('dark-change');
+	
+	darkMode.addEventListener('click', function(){
+		// darkMode.classList.toggle('active');
+		
+		content.classList.toggle('bg-light');
+	});
+	
 
 	//  ===== VARIABLES =====  
 
@@ -48,8 +57,8 @@
 	  fetch(urlList)
 		.then(res => res.json())
 		.then(data => renderData(data.data) )
- 		.catch(function(error) {
- 			alert('Hubo un problema con la petición Fetch:' + error.message);
+		.catch(function(error) {
+			alert('Hubo un problema con la petición Fetch:' + error.message);
 			console.log('Hubo un problema con la petición Fetch:' + error.message);
 		});
 	}

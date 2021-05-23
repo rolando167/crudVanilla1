@@ -1,6 +1,7 @@
 :root{
 	--dark: #16191c;
-	--dark-x: #1e2126;
+  --dark-x: #1e2126;
+	--dark-xx: #0d1117;
 	--light: #ffffff;
 }
 
@@ -26,7 +27,7 @@ body{
 
 
 .bg-dark{
-	background-color: var(--dark) !important;
+	background-color: var(--dark-xx) !important;
 }
 
 
