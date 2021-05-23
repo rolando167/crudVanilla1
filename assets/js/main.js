@@ -5,15 +5,20 @@
 	var content = document.getElementsByTagName('body')[0];
 	var darkMode = document.getElementById('dark-change');
 	
-	darkMode.addEventListener('click', function(){
+	darkMode.addEventListener('click',  () => {
 		darkMode.classList.toggle('active');
 
 		content.classList.toggle('bg-dark');
 		// Guardar en localstorage
 		if(content.classList.contains('bg-dark')){
 			localStorage.setItem('dark-mode', 'true');
+			darkMode.firstChild.classList.remove('bxs-sun');
+			darkMode.firstChild.classList.add('bxs-moon');
+
 		}else{
 			localStorage.setItem('dark-mode', 'false');
+			darkMode.firstChild.classList.add('bxs-sun');
+			darkMode.firstChild.classList.remove('bxs-moon');
 		}
 
 	});
@@ -21,10 +26,13 @@
 	if(localStorage.getItem('dark-mode') === 'true'){
 		content.classList.add('bg-dark');
 		darkMode.classList.add('active');
-
+		darkMode.firstChild.classList.remove('bxs-sun');
+		darkMode.firstChild.classList.add('bxs-moon');
 	}else{
 		content.classList.remove('bg-dark');
 		darkMode.classList.remove('active');
+		darkMode.firstChild.classList.add('bxs-sun');
+		darkMode.firstChild.classList.remove('bxs-moon');
 	}
 	
 
