@@ -4,8 +4,8 @@
 	
 	darkMode.addEventListener('click', function(){
 		// darkMode.classList.toggle('active');
-		
-		content.classList.toggle('bg-light');
+
+		 document.body.classList.toggle('bg-dark');
 	});
 	
 
