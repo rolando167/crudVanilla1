@@ -6,7 +6,23 @@
 		darkMode.classList.toggle('active');
 
 		content.classList.toggle('bg-dark');
+		// Guardar en localstorage
+		if(content.classList.contains('bg-dark')){
+			localStorage.setItem('dark-mode', 'true');
+		}else{
+			localStorage.setItem('dark-mode', 'false');
+		}
+
 	});
+
+	if(localStorage.getItem('dark-mode') === 'true'){
+		content.classList.add('bg-dark');
+		darkMode.classList.add('active');
+
+	}else{
+		content.classList.remove('bg-dark');
+		darkMode.classList.remove('active');
+	}
 	
 
 	//  ===== VARIABLES =====  
