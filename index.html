@@ -21,25 +21,41 @@
 
 	<header class="container mt-5">
 		<nav class="navbar navbar-dark bg-dark">
-			<a class="navbar-brand">CRUD</a>
+			<a class="navbar-brand">GESTION PERSONA</a>
 		 
-				<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Dark Mode</button>
-		 
+			<button class="btn btn-outline-warning my-2 my-sm-0" type="button">Dark Mode</button>
 		</nav>
 	</header>
-	<section class="taglineBlock">
-		<div class="container mt-5">
-			<!-- Button trigger modal -->
-			<form class="form-inline">
-				<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-				<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-			</form>
 
-			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			 Nuevo
-			</button>
+	 
+
+	<section class="taglineBlock">
+		<div class="container mt-5 ">
+			<!-- Button trigger modal -->
+			<div class="row  ">
+				<div class="col-md-2 mr-auto">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+							<i class='bx bx-plus-medical'></i> Nuevo
+					</button>
+				</div>
+
+				<div class="col-md-4">
+					<form>
+						<div class="form-row">
+							<div class="col-md-10 my-1 ">
+								<label class="sr-only" for="inlineFormInputName">Name</label>
+								<input type="text" class="form-control" id="inlineFormInputName" placeholder="Buscar">
+							</div>
+							<div class="col-md-2 col-auto my-1">
+								 <button type="submit" class="btn btn-primary"><i class='bx bx-search-alt' ></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
+
 	<section class="taglineBlock">
 		<div class="container mt-5">
 			<div class="table-responsive">
