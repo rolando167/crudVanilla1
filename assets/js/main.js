@@ -12,13 +12,13 @@
 		// Guardar en localstorage
 		if(content.classList.contains('bg-dark')){
 			localStorage.setItem('dark-mode', 'true');
-			darkMode.firstChild.classList.remove('bxs-sun');
-			darkMode.firstChild.classList.add('bxs-moon');
+			darkMode.firstChild.classList.remove('bxs-moon');
+			darkMode.firstChild.classList.add('bxs-sun');
 
 		}else{
 			localStorage.setItem('dark-mode', 'false');
-			darkMode.firstChild.classList.add('bxs-sun');
-			darkMode.firstChild.classList.remove('bxs-moon');
+			darkMode.firstChild.classList.add('bxs-moon');
+			darkMode.firstChild.classList.remove('bxs-sun');
 		}
 
 	});
@@ -26,13 +26,13 @@
 	if(localStorage.getItem('dark-mode') === 'true'){
 		content.classList.add('bg-dark');
 		darkMode.classList.add('active');
-		darkMode.firstChild.classList.remove('bxs-sun');
-		darkMode.firstChild.classList.add('bxs-moon');
+		darkMode.firstChild.classList.remove('bxs-moon');
+		darkMode.firstChild.classList.add('bxs-sun');
 	}else{
 		content.classList.remove('bg-dark');
 		darkMode.classList.remove('active');
-		darkMode.firstChild.classList.add('bxs-sun');
-		darkMode.firstChild.classList.remove('bxs-moon');
+		darkMode.firstChild.classList.add('bxs-moon');
+		darkMode.firstChild.classList.remove('bxs-sun');
 	}
 	
 
