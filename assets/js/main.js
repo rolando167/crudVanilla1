@@ -20,8 +20,8 @@
 					<td>${post.nombre}</td>
 					<td>${post.email}</td>
 					<td>${post.monto}</td>
-					<td>${post.state}</td>
-					<td>${post.created_at}</td>
+					<td class="text-center">${post.state}</td>
+					<td class="text-center">${post.created_at}</td>
 					<td class="text-center">
 					<button type="button" class="btn btn-outline-success mr-1"><i class='bx bxs-edit'></i></button>
 					<button type="button" class="btn btn-outline-danger"><i class='bx bx-stop-circle'></i></button>
