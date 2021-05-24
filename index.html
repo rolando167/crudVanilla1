@@ -108,7 +108,7 @@
 		  </div>
 			<div class="modal-body text-white">
 				<div class="container-fluid">
-					<form>
+					<form id="my-form" class="add-post-form" method="POST">
 					  <div class="form-group">
 						<label for="exampleInputEmail1">Nombre</label>
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -128,7 +128,7 @@
 			</div>
 		  <div class="modal-footer">
 			<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cerrar</button>
-			<button type="button" class="btn btn-outline-primary">Guadar</button>
+			<button type="submit" class="btn btn-outline-primary" form="my-form">Guadar</button>
 		  </div>
 		</div>
 	  </div>

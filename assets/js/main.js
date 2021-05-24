@@ -39,6 +39,7 @@
 	//  ===== VARIABLES =====  
 
 	var tableData = document.getElementById('table-data').getElementsByTagName('tbody')[0];
+	var addPostForm = document.querySelector('.add-post-form');
 
 	var urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
  
@@ -92,8 +93,15 @@
 
 	fetchData();
 	
-	// ===== GET DATA ===== -->
-	
+	// ===== POST STORE DATA ===== -->
+	// Create 	- Insert new Post
+	// Method: POST
+	addPostForm.addEventListener('submit', (event) =>{
+		event.preventDefault();
+
+		console.log('submitter');
+	});
+
 	// ===== GET DATA ===== -->
 	
 	// ===== GET DATA ===== -->
