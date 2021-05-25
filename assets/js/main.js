@@ -41,7 +41,7 @@
 	var tableData = document.getElementById('table-data').getElementsByTagName('tbody')[0];
 	var addPostForm = document.querySelector('.add-post-form');
 
-	var urlList = 'https://higorr.pe/api/checkTestLista/55140268'; 
+	var urlList = 'https://higorr.pe/api/contacto/checkTestLista/55140268'; 
  
 	// ===== GET DATA ===== -->
 	// Method: GET
@@ -96,8 +96,33 @@
 	// ===== POST STORE DATA ===== -->
 	// Create 	- Insert new Post
 	// Method: POST
-	addPostForm.addEventListener('submit', (event) =>{
+	var nombreValue = document.getElementById('nombreValue');
+	var emailValue = document.getElementById('emailValue');
+	var montoValue = document.getElementById('montoValue');
+
+	addPostForm.addEventListener('submit', (event) => {
 		event.preventDefault();
+		console.log(nombreValue);
+	 
+		fetch('https://higorr.pe/api/contacto/checkTestStore/55140268', {
+			method : 'POST',
+			credentials: "same-origin",
+			headers : {
+				"Content-Type": "application/json",
+                "Accept": "application/json, text-plain, */*",
+			},
+			body: JSON.stringify({
+				 nombre : nombreValue.value
+				, email : emailValue.value
+				, monto : montoValue.value
+			})
+		})
+		.then(res => res.json())
+		.then( alert('Registro existoso!!') )
+		.catch(function(error) {
+			alert('Hubo un problema con la petición Fetch:' + error.message);
+			console.log('Hubo un problema con la petición Fetch:' + error.message);
+		})
 
 		console.log('submitter');
 	});
