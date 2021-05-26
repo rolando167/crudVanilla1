@@ -47,6 +47,8 @@
 	// Method: GET
 
 	const renderData = (data) =>{
+		tableData.innerHTML = '';
+		
 		data.forEach((post, index) => {
 			let tableRow = document.createElement('tr');
 			tableRow.id = post.id;
@@ -102,7 +104,7 @@
 
 	addPostForm.addEventListener('submit', (event) => {
 		event.preventDefault();
-		console.log(nombreValue);
+		// console.log(nombreValue);
 	 
 		fetch('https://higorr.pe/api/contacto/checkTestStore/55140268', {
 			method : 'POST',
@@ -118,7 +120,11 @@
 			})
 		})
 		.then(res => res.json())
-		.then( alert('Registro existoso!!') )
+		.then( () => {
+			alert('Registro existoso!!');
+			$('#exampleModal').modal('hide');
+			fetchData();
+		})
 		.catch(function(error) {
 			alert('Hubo un problema con la petición Fetch:' + error.message);
 			console.log('Hubo un problema con la petición Fetch:' + error.message);
